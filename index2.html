@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form registrazione utente</title>
+<style>
+    body{
+        background-image: url('STILE-DI-MUSICA.JPG');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        }
+    div{    
+            text-align: center;
+            font-family: 'Courier New';
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            border-radius: 20px;
+        }
+    h1{
+        text-align: center;
+        font-family: 'Courier New';
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    
+    h3{
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        font-family: 'Courier New';
+        }
+    button{
+        border-radius: 12px;
+    }   
+    p{
+        text-align: center;
+        color: white;
+        font-family: 'Courier New';
+        font-size:25px ;
+    } 
+
+    </style>
+</head>
+<!--Crea una pagina di registrazione per un'app di musica in streaming!
+Crea una pagina web con un form al suo interno per raccogliere dati da parte dell'utente.
+Il form deve contenere degli input fields per ottenere le seguenti informazioni:
+
+nome (con un type="text")
+cognome (con un type="text")
+indirizzo email (con un type="email")
+password (con un type="password")
+data di nascita (con un type="date")
+numero di telefono (con un type="number")
+qualche checkbox per selezionare i propri gusti musicali (ciascuna con un type="checkbox")
+accettazione dei termini e condizioni (con un type="radio")
+bottone type="submit"con la scritta “Invia registrazione” che una volta cliccato
+ faccia apparire un popup con la scritta “Registrazione inviata!”
+-->
+
+<body>
+   
+    <h1>Inserisci i tuoi dati <br> per effetuare la registrazione</h1>
+    <h3>Compila il form e accetta i termini e le condizioni di servizio</h3>
+    <p>i tuoi dati</p>
+    <form onsubmit="alert('Registrazione inviata. grazie e buon ascolto!')">
+    
+         <div>
+            <input type="text" placeholder="nome">
+            <input type="text" placeholder="cognome">
+         </div>
+    <br>       
+         <div>
+            <input type="email" placeholder="inerisci la tua email">
+            <input type="password" placeholder="scegli una password">
+         </div>
+    <br>        
+         <div>
+           <input type="number" placeholder="inserisci il tuo numero">
+         </div>
+        <p>inserisci data di nascita</p>
+         <div>
+            <input type="date">
+         </div>
+ 
+            <p>seleziona 1 o piu elementi per ricevere contenuti piu pertinenti a te</p>
+        <!--generi musicali-->
+       <div>
+        
+        <div>
+            <input type="checkbox"><b> Classica.</b> <input type="checkbox"><b> Jazz.</b>
+         </div>
+       
+         <div>
+             <input type="checkbox"><b>Rock and Roll.</b>  <input type="checkbox"> <b>Pop.</b>
+        </div>
+                
+        <div>
+            <input type="checkbox"><b>Country.</b>
+        </div>
+   <!--fine generi-->
+        <div>
+            <input type="radio">Accettazione termini e condizioni del servizio
+        </div>
+       
+        <div>
+            <button type="submit">INVIA REGISTRAZIONE</button>
+        </div>
+        </div>
+    
+    </form >
+   
+</body>
+</html>
